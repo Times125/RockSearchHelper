@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/search_src_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/search40"
+        android:lines="1"
+        android:autoText="true"
+        android:hint="请输入查找内容，如“花岗岩”"/>
+
+    <Button
+        android:id="@+id/search_go_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="查找"
+        android:textSize="18sp"
+        android:layout_below="@id/search_src_text"
+        android:background="@drawable/button_style"/>
+
+    <ListView
+        android:id="@+id/result_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_go_btn">
+
+    </ListView>
+
+</RelativeLayout>
